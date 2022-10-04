@@ -6,7 +6,7 @@ const Users = () => {
     const users = useLoaderData();
     //console.log(users);
     return (
-            <div className='px-20 grid grid-cols-3 gap-5 mt-8'>
+            <div className='px-20  grid grid-cols-3 gap-5 mt-8'>
             {
                 users.map(user => <User user={user} key={user.id}></User>)
             }
