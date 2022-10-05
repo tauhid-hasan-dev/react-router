@@ -37,11 +37,12 @@ function App() {
          loader: async()=>{
           return fetch('https://jsonplaceholder.typicode.com/posts')
          },
-         element: <Posts></Posts>
+         element:<Posts></Posts>
         },
         {path: '/posts/:postId',
-        loader: async(params)=>{
-          return fetch(`https://jsonplaceholder.typicode.com/posts/#${params.postId}`)
+        loader: async({params})=>{
+          console.log(params)
+          return fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`)
         },
         element:<PostDetails></PostDetails>
         }

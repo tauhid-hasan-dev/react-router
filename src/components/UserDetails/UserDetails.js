@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { BeakerIcon, GlobeAltIcon, DevicePhoneMobileIcon } from '@heroicons/react/24/solid'
+import { GlobeAltIcon, DevicePhoneMobileIcon } from '@heroicons/react/24/solid'
 
 const UserDetails = () => {
     const user = useLoaderData();
